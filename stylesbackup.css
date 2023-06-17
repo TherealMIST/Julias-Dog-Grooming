@@ -1,0 +1,640 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+#B993D6 #8CA6DB i think these two would make a good linear gradient to the right
+#00d2ff #3a7bd5 i think these two would make a good linear gradient to the right
+
+
+MAIN COLOR: #8ca6db #7085af #546483
+SECONDARY COLOR: #b993d6 #9476ab #6f5880
+
+#0D4C92
+
+#59C1BD
+
+#A0E4CB
+
+#CFF5E7
+
+
+
+MAIN COLOR: #343a40, #212529
+GREY COLOR: #ffc078, #ffa94d, #ff922b
+*/
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+}
+
+.dog-logo {
+  display: flex;
+  align-items: center;
+}
+
+.dog-logo-img img {
+  width: 60px;
+  height: 60px;
+}
+
+.dog-logo-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0d4c92;
+}
+
+.nav-open-btn {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  display: none;
+}
+
+.nav-open-btn span {
+  display: block;
+  height: 9px;
+  width: 100%;
+  border-radius: 9px;
+  background-color: #0d4c92;
+  position: absolute;
+}
+
+.nav-open-btn span:nth-child(1) {
+  top: 0px;
+}
+
+.nav-open-btn span:nth-child(2) {
+  top: 18px;
+}
+
+.nav-open-btn span:nth-child(3) {
+  top: 36px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-close-btn {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  display: none;
+}
+
+.nav-close-btn span {
+  display: block;
+  height: 9px;
+  width: 100%;
+  border-radius: 9px;
+  background-color: #0d4c92;
+  position: absolute;
+}
+
+.nav-close-btn span:nth-child(1) {
+  transform: rotate(-135deg);
+}
+
+.nav-close-btn span:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.list-item:link,
+.list-item:visited {
+  display: block;
+  margin: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #0d4c92;
+  transition: all 300ms;
+}
+
+.list-item:hover,
+.list-item:active {
+  color: #212529;
+}
+
+.home-section {
+  padding: 125px 0;
+  background: linear-gradient(#59c1bd, #cff5e7);
+}
+
+.home-section-container {
+  margin: auto;
+  max-width: 96rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-info {
+  max-width: 300px;
+  color: #0d4c92;
+}
+
+.home-info h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 35px;
+}
+
+.home-info p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.home-section-image img {
+  display: block;
+  width: 550px;
+}
+
+.about-section {
+  padding: 130px 0;
+}
+
+.about-section-container {
+  margin: auto;
+  max-width: 96rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-info {
+  max-width: 375px;
+  color: #0d4c92;
+}
+
+.about-info h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 35px;
+}
+
+.about-info p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.about-section-image img {
+  display: block;
+  width: 375px;
+}
+
+.service-section {
+  padding: 120px 0;
+  background: linear-gradient(#59c1bd, #cff5e7);
+}
+
+.service-section-container {
+  margin: auto;
+  max-width: 96rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service-item-one,
+.service-item-two,
+.service-item-three {
+  max-width: 275px;
+  color: #0d4c92;
+}
+
+.service-logo {
+  display: block;
+  width: 85%;
+  margin-bottom: 20px;
+}
+
+.service-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.service-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 35px;
+}
+
+.contact-home-section {
+  padding: 135px 0;
+}
+
+.contact-home-section-container {
+  margin: auto;
+  max-width: 96rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-home-info {
+  max-width: 425px;
+  color: #0d4c92;
+}
+
+.contact-home-info h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 80px;
+}
+
+.contact-home-btn {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0d4c92;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 25px;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.google-map-home {
+  width: 400px;
+  height: 400px;
+}
+
+.gallery-home-section {
+  padding: 120px 0;
+  background-image: url("../images/wood_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.gallery-home-section-container {
+  margin: auto;
+  max-width: 96rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery-home-section-image img {
+  display: block;
+  width: 400px;
+}
+
+.gallery-home-info {
+  max-width: 450px;
+  padding: 45px;
+  border-radius: 25px;
+  color: #0d4c92;
+  background: linear-gradient(#59c1bd, #cff5e7);
+}
+
+.gallery-home-info h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 80px;
+}
+
+.view-gallery-btn {
+  display: block;
+  text-decoration: none;
+  color: #0d4c92;
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 25px;
+  width: 225px;
+  text-align: center;
+  margin: auto;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4rem;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer-nav-list a:link,
+.footer-nav-list a:visited {
+  display: block;
+  margin: 0 20px 30px 20px;
+  text-decoration: none;
+  color: #0d4c92;
+  transition: color 300ms;
+}
+
+.footer-nav-list a:hover,
+.footer-nav-list a:active {
+  color: #59c1bd;
+}
+
+.footer-section small {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Pricing page */
+
+.service-pricing {
+  padding: 75px 0;
+  background: linear-gradient(#59c1bd, #cff5e7);
+}
+
+.service-pricing-container {
+  margin: auto;
+  max-width: 96rem;
+  padding: 75px;
+  background-color: #fff;
+  color: #0d4c92;
+}
+
+.service-pricing-container h2 {
+  font-weight: 700;
+  font-size: 52px;
+  margin-bottom: 50px;
+}
+
+.service-pricing-container h3 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.service-pricing-container p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.disclaimer-image {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.disclaimer-pricing,
+.bath-pricing,
+.haircut-pricing,
+.misc-pricing {
+  margin-bottom: 85px;
+}
+
+.bath-pricing h3 {
+  margin-bottom: 45px;
+}
+
+.bath-pricing p {
+  margin-bottom: 60px;
+}
+
+.misc-pricing h3 {
+  margin-bottom: 20px;
+}
+
+.misc-pricing p {
+  margin-bottom: 50px;
+}
+
+/* Contact Page */
+
+.contact-section {
+  padding: 75px 0;
+  background: linear-gradient(#59c1bd, #cff5e7);
+}
+
+.contact-section-container {
+  margin: auto;
+  max-width: 96rem;
+  padding: 75px;
+  background-color: #fff;
+  color: #0d4c92;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 140px;
+}
+
+.contact-info-one {
+  max-width: 365px;
+}
+
+.contact-info-one h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.contact-info-one p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-info-two {
+  max-width: 400px;
+}
+
+.contact-info-two h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.contact-links:link,
+.contact-links:visited {
+  display: block;
+  color: #59c1bd;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 300ms;
+}
+
+.contact-links:hover,
+.contact-links:active {
+  color: #a0e4cb;
+}
+
+.contact-info-two p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-section-address {
+  max-width: 96rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-section-address h1 {
+  max-width: 365px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.google-map-home {
+  width: 400px;
+  height: 400px;
+}
+
+/* Gallery Page */
+
+.gallery-section {
+  padding: 75px 0;
+  background: linear-gradient(#59c1bd, #cff5e7);
+}
+
+.gallery-section-container {
+  color: #0d4c92;
+  padding: 75px;
+  margin: auto;
+  background-color: #fff;
+  max-width: 960px;
+}
+
+.gallery-image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.gallery-image {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.lightbox-container {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+}
+
+.lightbox-container.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  width: 500px;
+  height: 500px;
+}
+
+.lightbox-btn {
+  display: block;
+  background-color: rgb(13, 76, 146, 0);
+  color: rgb(255, 255, 255, 0.5);
+  border: none;
+  font-size: 40px;
+  padding: 30px 10px;
+  z-index: 2;
+  transition: background-color 300ms, color 300ms;
+}
+
+.lightbox-btn:hover {
+  background-color: #0d4c92;
+  color: #fff;
+}
+
+.lightbox-btn-left {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.lightbox-btn-right {
+  border-radius: 0px 20px 20px 0px;
+}
+
+.lightbox-btn-close {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  display: block;
+  background: none;
+  color: rgb(255, 255, 255, 0.5);
+  border: none;
+  font-size: 60px;
+  z-index: 2;
+  transition: color 300ms;
+}
+
+.lightbox-btn-close:hover {
+  color: #fff;
+}
+
+/* All Secondary Pages */
+
+.title-header {
+  font-weight: 700;
+  font-size: 62px;
+  margin-bottom: 50px;
+}
+
+.title-span {
+  display: block;
+  background-color: #0d4c92;
+  height: 6px;
+  width: 100%;
+  margin-bottom: 50px;
+}
